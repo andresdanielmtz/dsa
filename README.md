@@ -1,3 +1,3 @@
 # Data Structures and Algorithms 
 
-Personal repository. 
+Personal repository for storage and security purposes. 
