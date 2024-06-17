@@ -8,3 +8,5 @@ def maxDepth(s: str) -> int:
         elif stack and char in closing: stack.pop()
         if len(stack) > counter: counter = len(stack)
     return counter
+
+
