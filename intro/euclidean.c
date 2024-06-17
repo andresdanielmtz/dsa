@@ -6,13 +6,11 @@ typedef struct {
 } fraction;
 
 int euclidean(fraction frac) { 
-  return 2;
+  return 2; // TODO: Finish this 
 
 }
 
 void convert(float num) {
-    int U = num % 10; 
-  printf("%d", num % 10);
 }
 
 

@@ -13,12 +13,31 @@ void listInitalize() {
   z->next = z;
 }
 
-void deleteNext(struct node *t) { t->next = t->next->next; }
+void deleteNext(struct node *t) { 
+  /*
+   * This deletes the next value by assigning its next to the next-next.
+   * */
+  t->next = t->next->next; 
+}
+
+void terminateList(struct node *head) { 
+  struct node *traversal_node; 
+  struct node *temp_head;
+
+  traversal_node = head; temp_head = head; 
+  while (traversal_node!=NULL){ 
+    traversal_node = traversal_node->next; 
+  }
+  temp_head = traversal_node; 
+}
+
+// TODO: Traverse List (and print each element)
+
 
 struct node *insertAfter(int v, struct node *t) {
-  struct node *x;
+  struct node *x; // Creates new node
   x = (struct node *)malloc(sizeof *x);
-  x->key = v;
+  x->key = v; // Asign new value
   x->next = t->next;
   t->next = x;
   return x;
