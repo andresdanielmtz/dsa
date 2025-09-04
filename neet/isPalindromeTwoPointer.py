@@ -1,3 +1,4 @@
+# Two Pointer o(n)
 def isPalindrome(s: str) -> bool:
     L, R = 0, len(s) - 1
     while L <= R:
