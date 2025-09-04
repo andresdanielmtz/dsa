@@ -1,7 +1,10 @@
 #include <iostream>
 
-// Passed to CPP for consistency purposes. 
+// Passed to CPP for consistency purposes.
 // This algorithm was taken from Robert Sedgewick's Algorithms in C
+
+// ?? A teacher a couple of years ago asked us to implement this algorithm in
+// Java. I'll try to do it once I get to understand it.
 void erasthotenesSieve(int arr[], int N) {
   int i, j;
   std::cout << "The limit (n/2) is " << N / 2 << "\n";
@@ -14,14 +17,14 @@ void erasthotenesSieve(int arr[], int N) {
   //  prime.
   for (i = 2; i <= N / 2; i++)
     for (j = 2; j <= N / i; j++) {
-      printf("[%d, %d] = [%d]\n", i, j, i * j);
+      std::cout << "[" << i << ", " << j << "] = [" << i * j << "]" << "\n";
 
       arr[i * j] = 0;
     }
 
   for (i = 1; i <= N; i++)
     if (arr[i])
-      printf("%4d", i);
+      std::cout << i << "\n";
 }
 
 int main() {

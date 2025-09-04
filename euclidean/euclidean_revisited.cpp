@@ -3,9 +3,6 @@
 // The euclidean algorithm is an efficient method for computing the greatest
 // common divisor (gdc) of two integers
 
-// ?? A teacher a couple of years ago asked us to implement this algorithm in
-// Java. I'll try to do it once I get to understand it.
-
 // Method as described in Khan Academy
 double gcd(int a, int b) {
   if (a == 0)
