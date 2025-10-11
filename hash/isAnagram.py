@@ -1,6 +1,7 @@
 s = "racecar"
 t = "carraceeeeaaa"
 
+# two pointer approach
 def isAnagram(s: str, t: str):
     if len(s) != len(t): return False
     s_count = {}
