@@ -1,7 +1,7 @@
 
 # builtin 
 
-builtin_arr = list(reversed(range(1, 10))) # 0 to 9  
+builtin_arr = list(reversed(range(1, 10))) # 9 to 0
 print(builtin_arr[::-1])
 
 # in place sol 
@@ -19,7 +19,7 @@ arr = [9,8,7,6,5,4,3,2,1]
 reverse_arr = reverseArray(arr) 
 print(reverse_arr)
 
-# new list (naive due to extra memory) 
+# new list (naive due to requiring extra memory) 
 
 def reverseArrayWithNewList(arr):
     newList = [] 
