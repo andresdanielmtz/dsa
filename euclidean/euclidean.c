@@ -7,28 +7,24 @@ typedef struct {
 
 int euclidean(fraction frac) { 
   return 2; // TODO: Finish this 
-
 }
 
 void convert(float num) {
 }
 
-
-// TODO: Correctly learn about this algorithm, please. 
-int gcd(int u, int v) {
-  int t; 
-  while (u > 0) {
-    if (u < v)
+int gcd(int dividend, int divisor) {
+  int tempValue; 
+  while (dividend > 0) {
+    if (dividend < divisor)
     {
-      t = u; u = v; v = t; 
+      tempValue = dividend; dividend = divisor; divisor = tempValue; 
     }
-    u = u - v;
+    dividend = dividend - divisor;
   }
-  return v; 
+  return divisor; 
 }
 
 int main() {
-
   int x, y;
   while (scanf("%d %d", &x, &y) != EOF)
     if (x > 0 && y > 0)
